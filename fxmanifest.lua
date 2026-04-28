@@ -3,18 +3,14 @@ game 'gta5'
 lua54 'yes'
 
 author 'ykaa'
-description 'Simple Car Item'
-version '1.1.0'
-
-lua54 'yes'
 
 shared_script {
+    '@ox_lib/init.lua',
     'config.lua'
 }
 
 client_script {
     'client/client.lua'
 }
-server_script {
-    'server/server.lua'
-}
+
+dependency 'ox_lib'
